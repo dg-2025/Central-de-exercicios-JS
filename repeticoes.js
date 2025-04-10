@@ -94,6 +94,8 @@ function exercicio04() {
     }
 }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
 // 2.Jogo de adivinhação:
 function exercicio05() {
     debugger
@@ -109,4 +111,56 @@ function exercicio05() {
     alert("acerto!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
 
 }
-exercicio05()
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+// 3.Contagem regressiva:
+function exercicio05() {
+    let numero = Number(prompt("digite um numero"))
+    while (numero != 0) {
+        if (numero > 0) {
+            alert(numero)
+            numero--
+        }
+        else if (numero < 0 ) {    
+            alert(numero)
+            numero++
+        }
+    }
+}
+// ***********************************************************************************************************************************
+// Nível Avançado
+
+// Soma dos dígitos de um número: 
+    // numero = "34"
+    // numero[0]
+    // => 3
+    // numero[1]
+
+function Avancado01 () {
+    // 1.Soma dos dígitos de um número:
+    debugger
+    let numero = prompt("digite um numero positivo inteiro")
+    let contador = 0; 
+    let soma = 0;
+    while (contador < numero.length) {
+        let digito = numero[contador];
+        soma = Number(soma) + Number(digito);
+        contador++
+    }
+    alert(soma)
+}
+
+    // 2.Fatorial de um número:
+
+function Avancado02 () {
+    debugger
+    let numero = prompt("digite um numero")
+    let multiplicacao = 1
+    while (numero != 0) {
+         multiplicacao = multiplicacao * numero 
+        numero = numero - 1
+    }
+    alert(multiplicacao)
+}
+Avancado02 ()
