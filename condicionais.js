@@ -10,6 +10,8 @@ function Basico01() {
         console.log("menor de idade")
     }
 
+    gerarLog("exercicio de maioridade executado às " + new Date().toLocaleString())
+
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -211,4 +213,16 @@ function Avancado02() {
     else if (nota <60 ) {
         alert ("F")
     }
+}
+
+function gerarLog (textoDoLog) {
+
+    let container = document.querySelector(".logs-container");
+
+    let paragraph = document.createElement("p");
+
+    paragraph.innerHTML = textoDoLog;
+
+    container.appendChild(paragraph); // adiciona o paragrafo dentro de logsContainer
+
 }

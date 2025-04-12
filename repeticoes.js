@@ -163,4 +163,4 @@ function Avancado02 () {
     }
     alert(multiplicacao)
 }
-Avancado02 ()
+
