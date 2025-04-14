@@ -1,91 +1,62 @@
+// FOR
 function exemploFor() {
-
-    // FOR
-    // 1o = Declarar contador.
-    // 2o = Condição (enquanto).
-    // 3o = Incremento.
-
-    ///////////////////////////////////////////////////////////////////////////////////////////////////
-
     for (let contador = 1; contador <= 5; contador++) {
         alert(contador);
     }
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
-
+// WHILE
 function exemploWhile() {
-
     let contador = 1;
-
     while (contador <= 5) {
-
         console.log(contador);
         contador++;
-
     }
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
-
+// DO WHILE
 function exemploDoWhile() {
-
     let contador = 1;
-
     do {
-
         alert(contador);
         contador++;
-
     } while (contador <= 5);
 }
-// ***********************************************************************************************************************************
+
 // Nível Básico
 
-// 1.Contagem de 1 a 10:
-function exercicio01() {
+function repeticoesBasico01() {
     for (let contador = 1; contador <= 10; contador++) {
         alert(contador);
     }
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
-
-// 2.Tabuada de um número:
-function exercicio02() {
+function repeticoesBasico02() {
     let numero = Number(prompt("insira um numero"));
     for (let contador = 1; contador <= 10; contador++) {
-        let resultado = (numero * contador);
-        alert(resultado);
+        alert(numero * contador);
     }
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
-
-// 3.Soma dos primeiros N números naturais:
-function exercicio03() {
+function repeticoesBasico03() {
     let numero = Number(prompt("insira um numero"))
     let contador = 1
     let soma = 0
     if (numero >= 0) {
         while (contador <= numero) {
-            soma = Number(soma) + Number(contador)
+            soma += contador;
             contador++
         }
         alert(soma)
+    } else {
+        alert("numero nao e natural")
     }
-    else { alert("numero nao e natural") }
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
 // Nível Intermediário
 
-// 1.Exibir os números pares de 1 a 50:
-function exercicio04() {
-
-
+function repeticoesIntermediario01() {
     let contador = 1;
-
     while (contador <= 50) {
         if (contador % 2 == 0) {
             console.log(contador);
@@ -94,73 +65,45 @@ function exercicio04() {
     }
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
-
-// 2.Jogo de adivinhação:
-function exercicio05() {
-    debugger
-    let numero = Math.floor(100 * Math.random(+1));
+function repeticoesIntermediario02() {
+    let numero = Math.floor(Math.random() * 100);
     let valor;
     while (valor != numero) {
         valor = Number(prompt("insira um numero"));
-        if (valor < numero) { alert("mais")  }
-        else if (valor > numero) { alert("menos") }
-
-
+        if (valor < numero) {
+            alert("mais");
+        } else if (valor > numero) {
+            alert("menos");
+        }
     }
     alert("acerto!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
-
-// 3.Contagem regressiva:
-function exercicio05() {
+function repeticoesIntermediario03() {
     let numero = Number(prompt("digite um numero"))
     while (numero != 0) {
-        if (numero > 0) {
-            alert(numero)
-            numero--
-        }
-        else if (numero < 0 ) {    
-            alert(numero)
-            numero++
-        }
+        alert(numero);
+        numero > 0 ? numero-- : numero++;
     }
 }
-// ***********************************************************************************************************************************
+
 // Nível Avançado
 
-// Soma dos dígitos de um número: 
-    // numero = "34"
-    // numero[0]
-    // => 3
-    // numero[1]
-
-function Avancado01 () {
-    // 1.Soma dos dígitos de um número:
-    debugger
+function repeticoesAvancado01() {
     let numero = prompt("digite um numero positivo inteiro")
-    let contador = 0; 
     let soma = 0;
-    while (contador < numero.length) {
-        let digito = numero[contador];
-        soma = Number(soma) + Number(digito);
-        contador++
+    for (let i = 0; i < numero.length; i++) {
+        soma += Number(numero[i]);
     }
     alert(soma)
 }
 
-    // 2.Fatorial de um número:
-
-function Avancado02 () {
-    debugger
-    let numero = prompt("digite um numero")
+function repeticoesAvancado02() {
+    let numero = Number(prompt("digite um numero"))
     let multiplicacao = 1
-    while (numero != 0) {
-         multiplicacao = multiplicacao * numero 
-        numero = numero - 1
+    while (numero > 0) {
+        multiplicacao *= numero
+        numero--
     }
     alert(multiplicacao)
 }
-

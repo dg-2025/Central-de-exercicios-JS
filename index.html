@@ -1,128 +1,87 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Central de Exercicios</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Central de Exercícios Completa</title>
+  <script src="script.js"></script>
+  <script src="condicionais.js"></script>
+  <script src="repeticoes.js"></script>
+  <script src="uteis.js"></script>
 </head>
 <body>
-    <!-- <script src="script.js"></script> -->
-    <!-- <script src="condicionais.js"></script> -->
-    <!-- <script src="/Central-de-exercicios-JS/repeticoes.js"></script> -->
-     <script src="/Central-de-exercicios-JS/uteis.js"></script>
-     <header></header>
-     <main class="pagina">
+  <h1>Central de Exercícios</h1>
+  <main class="pagina">
 
-        <!-- <div class="exercicio">
+    <!-- ==================== CONDICIONAIS ==================== -->
+    <section class="exercicio">
+      <h2>Condicionais - Básico</h2>
+      <button onclick="condicionalBasico01()">Ex. 01 - Verificar maioridade</button>
+      <button onclick="condicionalBasico02()">Ex. 02 - Número positivo ou negativo</button>
+      <button onclick="condicionalbasico03()">Ex. 03 - Aprovação em prova</button>
+      <button onclick="condicionalBásico04()">Ex. 04 - Positivo, negativo ou zero</button>
+      <button onclick="condicionalBásico05()">Ex. 05 - Classificação de idade</button>
+      <button onclick="condicionalBásico06()">Ex. 06 - Par ou ímpar</button>
+    </section>
 
-            <h1>Central de Exercícios.</h1>
+    <section class="exercicio">
+      <h2>Condicionais - Intermediário</h2>
+      <button onclick="condicionalIntermediario01()">Ex. 07 - Calculadora</button>
+      <button onclick="condicionalintermediario02()">Ex. 08 - Maior entre 3 números</button>
+      <button onclick="condicionalintermediario03()">Ex. 09 - Desconto no valor</button>
+      <button onclick="condicionalintermediario04()">Ex. 10 - Login</button>
+    </section>
 
-            <h2>Exercícios de Condicionais</h2>
+    <section class="exercicio">
+      <h2>Condicionais - Avançado</h2>
+      <button onclick="condicionalAvancado01()">Ex. 11 - Tipo de triângulo</button>
+      <button onclick="condicionalAvancado02()">Ex. 12 - Nota em letra</button>
+    </section>
 
-            <h3>Exercício 01 - Verificar a maioridade </h3>
-            <p>Exercício que pede uma idade e mostra se a pessoa é de maior ou não.</p>
-            <button onclick="verMaioridade()">Executar exercício</button>
+    <!-- ==================== REPETIÇÕES ==================== -->
+    <section class="exercicio">
+      <h2>Repetições - Básico</h2>
+      <button onclick="repeticoesBasico01()">Ex. 13 - Contar até 10</button>
+      <button onclick="repeticoesBasico02()">Ex. 14 - Tabuada</button>
+      <button onclick="repeticoesBasico03()">Ex. 15 - Soma de naturais</button>
+    </section>
 
-            <h3>Exercício 02 - Verificar se o número positivo ou negativo </h3>
-            <p>Exercício que pede um número e mostra se Positivo ou Negativo.</p>
-            <button onclick="verPositivoNegativo()">Executar exercício</button>
+    <section class="exercicio">
+      <h2>Repetições - Intermediário</h2>
+      <button onclick="repeticoesIntermediario01()">Ex. 16 - Pares de 1 a 50</button>
+      <button onclick="repeticoesIntermediario02()">Ex. 17 - Jogo de adivinhação</button>
+      <button onclick="repeticoesIntermediario03()">Ex. 18 - Contagem regressiva</button>
+    </section>
 
-            <h3>Exercício 03 - Verificar aprovação da prova </h3>
-            <p>Exercício que pede a nota e identifica se foi Aprovado ou Reprovado.</p>
-            <button onclick="aprovacaoProva()">Executar exercício</button>
+    <section class="exercicio">
+      <h2>Repetições - Avançado</h2>
+      <button onclick="repeticoesAvancado01()">Ex. 19 - Soma dos dígitos</button>
+      <button onclick="repeticoesAvancado02()">Ex. 20 - Fatorial</button>
+    </section>
 
-            <h3>Exercício 04 - Verificar se o número positivo, negativo ou zero </h3>
-            <p>Exercício que pede um número e mostra se Positivo, Negativo ou Zero.</p>
-            <button onclick="verpPositivoNegativoZero()">Executar exercício</button>
+    <!-- ==================== ÚTEIS ==================== -->
+    <section class="exercicio">
+      <h2>Funções Úteis - Básico</h2>
+      <button onclick="basicoFILTER01()">Ex. 21 - Filtro > 10</button>
+      <button onclick="basicoFILTER02()">Ex. 22 - Nomes com J</button>
+    </section>
 
-            <h3>Exercício 05 - Classifica a idade </h3>
-            <p>Exercício que pede uma idade e classifica entre Criança, Adolescente ou Adulto.</p>
-            <button onclick="classificarIdade()">Executar exercício</button>
+    <section class="exercicio">
+      <h2>Funções Úteis - Intermediário</h2>
+      <button onclick="IntermediarioFILTER01()">Ex. 23 - Produtos baratos</button>
+      <button onclick="intermediario02()">Ex. 24 - Maiores de idade</button>
+    </section>
 
-            <h3>Exercício 06 - Verificar se o número é Impar ou Par </h3>
-            <p>Exercício que pede um número e mostra se é Impar ou Par.</p>
-            <button onclick="verParImpar()">Executar exercício</button>
+    <section class="exercicio">
+      <h2>Funções Úteis - Find</h2>
+      <button onclick="basicofind01()">Ex. 25 - Achar Amanda</button>
+      <button onclick="basicofind02()">Ex. 26 - Achar usuário ID 2</button>
+    </section>
 
-            <h3>Exercício 07 - Calculadora </h3>
-            <p>Exercício que pede dois número e a operação para efetuar o calculo.</p>
-            <button onclick="calculadora()">Executar exercício</button>
-
-            <h3>Exercício 08 - Verificar o maior número </h3>
-            <p>Exercício que pede três número e identifica o maior.</p>
-            <button onclick="verNumMaior()">Executar exercício</button>
-
-            <h3>Exercício 09 - Aplicar o desconto em compra </h3>
-            <p>Exercício que pede o valor da compra e caso seja maior que R$100,00 aplica o desconto de 10%.</p>
-            <button onclick="descontoCompra()">Executar exercício</button>
-
-            <h3>Exercício 10 - Validação de Login </h3>
-            <p>Exercício que valida se o login de adimistrador está correto.</p>
-            <button onclick="verNumMaior()">Executar exercício</button>
-
-            <h3>Exercício 11 - Classificação do Triângulo </h3>
-            <p>Exercício que pede o valor de de lados e classifica se o triângulo é Equilátero, Isóceles ou Escaleno.
-            </p>
-            <button onclick="classificarTriangulo()">Executar exercício</button>
-
-            <h3>Exercício 12 - Classificar notas </h3>
-            <p>Exercício que pede a nota e classifica entre A(90-100), B(80-89), C(70-79), D(60-69) e F(menor que 60).
-            </p>
-            <button onclick="classificarNotas()">Executar exercício</button>
-
-            <h3>Exercício 13 - Calcular o IMC </h3>
-            <p>Exercício que pede a altura e peso para calcular o IMC e classifica.</p>
-            <button onclick="calculoIMC()">Executar exercício</button>
-
-            <h3>Exercício 14 - Verificar o ano Bissexto </h3>
-            <p>Exercício que pede o ano e verifica se é Bissexto.</p>
-            <button onclick="anoBissexto()">Executar exercício</button>
-
-            <h2>Exercícios de Repetição</h2>
-
-            <h3>Exercício 01 - Contagem </h3>
-            <p>Exercício exibe a contagem dos número de 1 a 10.</p>
-            <button onclick="contagem()">Executar exercício</button>
-
-            <h3>Exercício 02 - Tabuada </h3>
-            <p>Exercício que pede um número para exibir a tabuada.</p>
-            <button onclick="tabuada()">Executar exercício</button>
-
-            <h3>Exercício 03 - Soma dos números naturais </h3>
-            <p>Exercício que pede um número para apresentar a soma deles.</p>
-            <button onclick="somaNaturais()">Executar exercício</button>
-
-            <h3>Exercício 04 - Exibe números pares </h3>
-            <p>Exercício exibe os números pares de 1 a 50.</p>
-            <button onclick="numPares()">Executar exercício</button>
-
-            <h3>Exercício 05 - Jogo de advinhação </h3>
-            <p>Exercício gera um número aleatório e solicita que você acerte.</p>
-            <button onclick="advinhacao()">Executar exercício</button>
-
-            <h3>Exercício 06 - Regressiva </h3>
-            <p>Exercício pede um número maior que zero e exibe a contagem regressiva.</p>
-            <button onclick="contagemRegressiva()">Executar exercício</button>
-
-            <h3>Exercício 07 - Soma dos Digitos </h3>
-            <p>Exercício pede um número inteiro positivo e efetua a soma dos digitos.</p>
-            <button onclick="somaDigitos()">Executar exercício</button>
-
-            <h3>Exercício 08 - Calcular o Fatorial </h3>
-            <p>Exercício pede um número e efetua o calculo do fator.</p>
-            <button onclick="fatorial()">Executar exercício</button>
-
- 
-      
-        </div> -->
-
-        <h3>Exercício 09 - Inverte o número </h3>
-        <p>Exercício pede um número e inverte seus digitos.</p>
-        <button onclick="Basico01()">Executar exercício</button>
-
-        <h2>Logs</h2>
-        <div class="logs-container">
-            <p>asdasdasdasdasd</p>
-        </div>
-
+    <section class="logs-container">
+      <h2>Logs</h2>
+    </section>
+  </main>
 </body>
 </html>
